@@ -1,4 +1,4 @@
-# agent.md — Codex Behaviour Contract (Modular / Incremental Safe)
+# agent.md — Codex Behaviour Contract
 Version: 2.0  
 Purpose: Define how Codex must behave when generating any part of the Technical Q&A Assistant codebase, whether producing a single module or the full repository.
 
@@ -82,7 +82,6 @@ You must apply the following design principles:
 - High-level orchestration functions should not contain low-level logic.
 - Low-level helpers must not know about high-level orchestration.
 
-
 ---
 
 ## 3. Code Output Rules (Modular Safe)
@@ -99,7 +98,6 @@ app/retrieval/hybrid_retriever.py
 
 <contents>
 ```
-
 - Ensure each file is complete and executable on its own.
 - Do not modify or regenerate existing files unless explicitly instructed.
 - Never rewrite previously generated modules without an explicit request referencing that file path.
