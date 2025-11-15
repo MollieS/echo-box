@@ -104,7 +104,7 @@ app/retrieval/hybrid_retriever.py
 - Do not modify or regenerate existing files unless explicitly instructed.
 - Never rewrite previously generated modules without an explicit request referencing that file path.
 
-⸻
+---
 
 ## 4. Error Handling Rules
 
@@ -123,7 +123,7 @@ app/retrieval/hybrid_retriever.py
 - Clear error wrapping
 - Log latency, errors, retries
 
-⸻
+---
 
 ## 5. Strict Prohibitions
 
@@ -140,7 +140,7 @@ You must never:
 - Remove required metadata fields
 - Produce incomplete or placeholder implementations
 
-⸻
+---
 
 ## 6. Testing Requirements
 
@@ -159,7 +159,7 @@ When tests are requested:
 
 Tests must be clear, isolated, and easy to extend.
 
-⸻
+---
 
 ## 7. LLM Provider Behaviour
 
@@ -170,7 +170,7 @@ The LLM provider must:
 - Log latency, retries, and errors via observability
 - Support drop-in replacement via configuration
 
-⸻
+---
 
 ## 8. Determinism & Idempotence
 
@@ -183,7 +183,7 @@ If asked to regenerate a file:
 - Produce the same structure and interfaces
 - Unless explicitly asked to modify them
 
-⸻
+---
 
 ## 9. Documentation Expectations
 
@@ -202,7 +202,7 @@ README (when requested) must include:
 - Configuration instructions
 - Testing instructions
 
-⸻
+---
 
 ## 10. Extensibility Requirements
 
@@ -216,7 +216,7 @@ The codebase must be easy to extend in:
 - Ranking functions
 - Evaluation tools
 
-⸻
+---
 
 ## 11. No Commentary Mode
 
@@ -227,6 +227,6 @@ When generating code:
 - Only output the requested files
 - Unless explicitly asked for explanation
 
-⸻
+---
 
 # end of agent.md
